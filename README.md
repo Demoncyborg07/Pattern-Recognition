@@ -202,7 +202,7 @@ Answer:
 ## 🔗 Model Link
 
 You can find the fully fine-tuned and pruned model hosted on Hugging Face here:  
-👉 **[TinyLlama-Sleep-Stress-Finetuned on Hugging Face](https://huggingface.co/DemonC/ZenBot)**
+👉 **[ZenBot on Hugging Face](https://huggingface.co/DemonC/ZenBot)**
 
 This link contains:
 - `config.json`, `tokenizer.json`, and `model.safetensors`
