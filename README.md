@@ -31,6 +31,45 @@ The main goals of this project are:
 
 ---
 
+## 🧠 Algorithms Used
+
+| Category                    | Algorithm / Technique                                | Purpose                                                                                                     |
+| --------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **1. Language Modeling**    | **TinyLlama (LlamaForCausalLM architecture)**        | Transformer-based autoregressive model used as the base architecture for conversational fine-tuning.        |
+| **2. Fine-Tuning Strategy** | **Instruction Fine-Tuning (Supervised Fine-Tuning)** | Aligns the model to follow medical Q&A instructions for sleep and stress queries.                           |
+| **3. Model Compression**    | **Pruning Algorithm (Weight Magnitude Pruning)**     | Removes less important model weights to reduce size and improve efficiency without major accuracy loss.     |
+| **4. Evaluation**           | **Benchmarking & Domain Evaluation**                 | Compares model responses using domain-specific test cases and quality metrics (fluency, relevance, safety). |
+| **5. Tokenization**         | **SentencePiece BPE Tokenization**                   | Efficient text tokenization compatible with Llama models.                                                   |
+| **6. Optimization**         | **AdamW Optimizer**                                  | Used during fine-tuning for stable convergence and better generalization.                                   |
+| **7. Data Processing**      | **JSON-based Dataset Parsing and Normalization**     | Handles the sleep–stress dataset for Q&A and dialogue pairs.                                                |
+
+## 🧰 Tools and Frameworks Used
+
+| Tool / Library                | Purpose                                                                    |
+| ----------------------------- | -------------------------------------------------------------------------- |
+| **Hugging Face Transformers** | Model loading, fine-tuning, pruning, and saving in `.safetensors` format.  |
+| **PyTorch**                   | Backend deep learning framework for model training and optimization.       |
+| **Accelerate / BitsAndBytes** | Efficient GPU memory utilization and low-bit precision quantization.       |
+| **Pandas & NumPy**            | Dataset preprocessing and analysis.                                        |
+| **Matplotlib**                | Visualization of training metrics and benchmarking results.                |
+| **Google Colab / Kaggle**     | Training and pruning environment (GPU-enabled).                            |
+| **Hugging Face Hub**          | Model hosting and distribution.                                            |
+| **Jupyter Notebook (.ipynb)** | Used for stepwise experimentation, training, and evaluation documentation. |
+
+
+## 🧩 Methods Implemented
+
+| Method                                | Description                                                                                                             |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Continued Pretraining (Stage 1)**   | Exposes the TinyLlama model to domain-specific (medical/sleep) corpus to adapt vocabulary and contextual understanding. |
+| **Instruction Fine-Tuning (Stage 2)** | Uses labeled Q&A datasets to train the model on patient-centered dialogue generation.                                   |
+| **Model Pruning**                     | Removes redundant parameters using structured/unstructured pruning for smaller, faster models.                          |
+| **Domain Benchmarking**               | Compares model performance on healthcare-related prompts and tracks metrics in `leaderboards_full.json`.                |
+| **Privacy-Preserving Deployment**     | Model designed to run locally (offline inference), ensuring user data privacy.                                          |
+| **Prompt Template Integration**       | `chat_template.jinja` defines the conversational prompt format for consistent dialogue behavior.                        |
+
+
+
 ## Environment Setup
 
 ```bash
