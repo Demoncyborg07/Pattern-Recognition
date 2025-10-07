@@ -1,0 +1,72 @@
+{
+  "Judge A: MedGemma - 4B": [
+    {
+      "model": "microsoft/phi-3-mini-4k-instruct",
+      "avg_similarity": 0.721,
+      "avg_rouge": 0.113,
+      "samples": 200,
+      "verdicts": {
+        "consistent": 200,
+        "hallucinated": 0,
+        "unknown": 0
+      }
+    },
+    {
+      "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "avg_similarity": 0.704,
+      "avg_rouge": 0.131,
+      "samples": 200,
+      "verdicts": {
+        "consistent": 200,
+        "hallucinated": 0,
+        "unknown": 0
+      }
+    },
+    {
+      "model": "google/gemma-2b",
+      "avg_similarity": 0.642,
+      "avg_rouge": 0.081,
+      "samples": 200,
+      "verdicts": {
+        "consistent": 200,
+        "hallucinated": 0,
+        "unknown": 0
+      }
+    }
+  ],
+  "Judge B: Meditron-7B": [
+    {
+      "model": "microsoft/phi-3-mini-4k-instruct",
+      "avg_similarity": 0.721,
+      "avg_rouge": 0.113,
+      "samples": 200,
+      "verdicts": {
+        "consistent": 200,
+        "hallucinated": 0,
+        "unknown": 0
+      }
+    },
+    {
+      "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "avg_similarity": 0.704,
+      "avg_rouge": 0.131,
+      "samples": 200,
+      "verdicts": {
+        "consistent": 200,
+        "hallucinated": 0,
+        "unknown": 0
+      }
+    },
+    {
+      "model": "google/gemma-2b",
+      "avg_similarity": 0.642,
+      "avg_rouge": 0.081,
+      "samples": 200,
+      "verdicts": {
+        "consistent": 200,
+        "hallucinated": 0,
+        "unknown": 0
+      }
+    }
+  ]
+}
