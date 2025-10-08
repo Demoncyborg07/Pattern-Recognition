@@ -255,5 +255,5 @@ This link contains:
 - Subramanian G - [GitHub Profile](https://github.com/Demoncyborg07)
 - Teammate 1 - [Thilak L](https://github.com/thilak0105)
 - Teammate 2 - [Raghul A R](https://github.com/a-steel-heart)
-- Teammate 3 - [Badre Narayanan R G]()
+- Teammate 3 - [Badre Narayanan R G](https://github.com/Badrergb)
 
